@@ -21,8 +21,7 @@ const Hero = () => {
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
               Создаем комплексные решения для автоматизации бизнеса: 
-              интеграция с ERP, каталоги с чертежами, системы заказов 
-              и личные кабинеты партнеров
+              системы заказов и личные кабинеты партнеров
             </p>
           </div>
 
@@ -42,28 +41,16 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="w-12 h-12 bg-awg-blue/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <Icon name="Database" className="w-6 h-6 text-awg-blue" />
+                <Icon name="ShoppingCart" className="w-6 h-6 text-awg-blue" />
               </div>
               <h3 className="text-lg font-semibold text-awg-dark mb-2">
-                Интеграция с ERP
+                Системы заказов
               </h3>
               <p className="text-gray-600">
-                Синхронизация с 1С, SAP, Oracle и другими системами учета
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-awg-blue/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                <Icon name="FileText" className="w-6 h-6 text-awg-blue" />
-              </div>
-              <h3 className="text-lg font-semibold text-awg-dark mb-2">
-                Каталоги с чертежами
-              </h3>
-              <p className="text-gray-600">
-                Технические характеристики, 3D-модели и документация
+                Автоматизация процессов заказов с согласованиями и контролем
               </p>
             </div>
 

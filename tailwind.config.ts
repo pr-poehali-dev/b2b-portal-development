@@ -19,12 +19,12 @@ export default {
 		},
 		extend: {
 			colors: {
-				// AWG.ru inspired colors
+				// Black-White-Teal color scheme
 				awg: {
-					blue: '#0066cc',
+					blue: '#14b8a6',
 					dark: '#1a1a1a',
 					gray: '#f5f5f5',
-					accent: '#ff6b35'
+					accent: '#0891b2'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
