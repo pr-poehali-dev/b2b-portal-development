@@ -19,6 +19,13 @@ export default {
 		},
 		extend: {
 			colors: {
+				// AWG.ru inspired colors
+				awg: {
+					blue: '#0066cc',
+					dark: '#1a1a1a',
+					gray: '#f5f5f5',
+					accent: '#ff6b35'
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
