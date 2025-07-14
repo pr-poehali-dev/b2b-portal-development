@@ -1,21 +1,7 @@
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import About from '@/components/About';
-import Services from '@/components/Services';
-import Portfolio from '@/components/Portfolio';
-import Contact from '@/components/Contact';
+import Presentation from '@/components/Presentation';
 
 const Index = () => {
-  return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <Contact />
-    </div>
-  );
+  return <Presentation />;
 };
 
 export default Index;

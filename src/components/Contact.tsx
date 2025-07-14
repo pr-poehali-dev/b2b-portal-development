@@ -125,7 +125,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-1">
                     Сообщение *
                   </label>
                   <Textarea
@@ -149,7 +149,7 @@ const Contact = () => {
               </form>
             </div>
 
-            <div className="bg-white p-8 rounded-lg">
+            <div className="bg-awg-gray p-8 rounded-lg border border-gray-700">
               <h3 className="text-2xl font-bold text-awg-dark mb-6">
                 Контактная информация
               </h3>
@@ -160,9 +160,9 @@ const Contact = () => {
                     <Icon name="Phone" className="w-5 h-5 text-awg-blue" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-awg-dark mb-1">Телефон</h4>
-                    <p className="text-gray-600">+7 (495) 123-45-67</p>
-                    <p className="text-gray-600">+7 (800) 123-45-67</p>
+                    <h4 className="font-semibold text-white mb-1">Телефон</h4>
+                    <p className="text-gray-300">+7 (495) 123-45-67</p>
+                    <p className="text-gray-300">+7 (800) 123-45-67</p>
                   </div>
                 </div>
 
@@ -171,9 +171,9 @@ const Contact = () => {
                     <Icon name="Mail" className="w-5 h-5 text-awg-blue" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-awg-dark mb-1">Email</h4>
-                    <p className="text-gray-600">info@b2bportals.ru</p>
-                    <p className="text-gray-600">sales@b2bportals.ru</p>
+                    <h4 className="font-semibold text-white mb-1">Email</h4>
+                    <p className="text-gray-300">info@b2bportals.ru</p>
+                    <p className="text-gray-300">sales@b2bportals.ru</p>
                   </div>
                 </div>
 
@@ -182,9 +182,9 @@ const Contact = () => {
                     <Icon name="MapPin" className="w-5 h-5 text-awg-blue" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-awg-dark mb-1">Адрес</h4>
-                    <p className="text-gray-600">г. Москва, ул. Тверская, 1</p>
-                    <p className="text-gray-600">БЦ "Технопарк", офис 501</p>
+                    <h4 className="font-semibold text-white mb-1">Адрес</h4>
+                    <p className="text-gray-300">г. Москва, ул. Тверская, 1</p>
+                    <p className="text-gray-300">БЦ "Технопарк", офис 501</p>
                   </div>
                 </div>
 
@@ -193,15 +193,15 @@ const Contact = () => {
                     <Icon name="Clock" className="w-5 h-5 text-awg-blue" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-awg-dark mb-1">Время работы</h4>
-                    <p className="text-gray-600">Пн-Пт: 9:00 - 18:00</p>
-                    <p className="text-gray-600">Техподдержка: 24/7</p>
+                    <h4 className="font-semibold text-white mb-1">Время работы</h4>
+                    <p className="text-gray-300">Пн-Пт: 9:00 - 18:00</p>
+                    <p className="text-gray-300">Техподдержка: 24/7</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
-                <h4 className="font-semibold text-awg-dark mb-4">Следите за нами</h4>
+                <h4 className="font-semibold text-white mb-4">Следите за нами</h4>
                 <div className="flex space-x-4">
                   <a href="#" className="w-10 h-10 bg-awg-blue/10 rounded-lg flex items-center justify-center hover:bg-awg-blue/20 transition-colors">
                     <Icon name="MessageCircle" className="w-5 h-5 text-awg-blue" />
