@@ -47,21 +47,32 @@ const Hero = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                    <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
+                <div className="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                      <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                    </div>
+                    <span className="text-sm text-awg-muted font-medium">b2b-portal.ru</span>
                   </div>
-                  <span className="text-sm text-awg-muted">b2b-portal.ru</span>
                 </div>
-                <div className="space-y-4">
-                  <div className="h-4 bg-awg-blue/20 rounded w-3/4"></div>
-                  <div className="h-4 bg-gray-200 rounded w-1/2"></div>
-                  <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-                  <div className="h-8 bg-awg-blue/10 rounded w-full"></div>
+                <div className="p-0">
+                  <img 
+                    src="/img/9e4ac800-bed6-4d08-af0e-9fdbd4bc7c99.jpg" 
+                    alt="B2B Portal Dashboard"
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
+              </div>
+              
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 bg-awg-blue text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+                Новый проект
+              </div>
+              <div className="absolute -bottom-4 -left-4 bg-white px-4 py-2 rounded-full text-sm font-medium shadow-lg border border-gray-200">
+                ⚡ Быстрый запуск
               </div>
             </div>
           </div>
