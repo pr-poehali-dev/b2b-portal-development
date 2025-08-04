@@ -22,12 +22,15 @@ export default {
 				sans: ['Avenir Next Cyr', 'system-ui', 'sans-serif']
 			},
 			colors: {
-				// Black-White-Teal color scheme
+				// AWG-inspired color scheme
 				awg: {
 					blue: '#00938c',
-					dark: '#1a1a1a',
-					gray: '#f5f5f5',
-					accent: '#00938c'
+					dark: '#000000',
+					gray: '#f8f9fa',
+					light: '#ffffff',
+					accent: '#00938c',
+					text: '#333333',
+					muted: '#6c757d'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
