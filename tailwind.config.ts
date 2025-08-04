@@ -18,13 +18,16 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Avenir Next Cyr', 'system-ui', 'sans-serif']
+			},
 			colors: {
 				// Black-White-Teal color scheme
 				awg: {
-					blue: '#14b8a6',
+					blue: '#00938c',
 					dark: '#1a1a1a',
 					gray: '#f5f5f5',
-					accent: '#0891b2'
+					accent: '#00938c'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
