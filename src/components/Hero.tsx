@@ -28,6 +28,22 @@ const Hero = () => {
                 Создаем комплексные решения для автоматизации бизнеса: 
                 системы заказов и личные кабинеты партнеров
               </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button
+                  onClick={() => scrollToSection('contact')}
+                  className="bg-awg-blue hover:bg-awg-blue/90 text-white px-8 py-4 text-lg rounded-xl shadow-lg"
+                >
+                  Получить консультацию
+                </Button>
+                <Button
+                  onClick={() => scrollToSection('portfolio')}
+                  variant="outline"
+                  className="border-2 border-awg-blue text-awg-blue hover:bg-awg-blue hover:text-white px-8 py-4 text-lg rounded-xl"
+                >
+                  Посмотреть работы
+                </Button>
+              </div>
             </div>
             
             <div className="relative">
@@ -46,26 +62,6 @@ const Hero = () => {
                   <div className="h-4 bg-gray-200 rounded w-5/6"></div>
                   <div className="h-8 bg-awg-blue/10 rounded w-full"></div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button
-                  onClick={() => scrollToSection('contact')}
-                  className="bg-awg-blue hover:bg-awg-blue/90 text-white px-8 py-4 text-lg rounded-xl shadow-lg"
-                >
-                  Получить консультацию
-                </Button>
-                <Button
-                  onClick={() => scrollToSection('portfolio')}
-                  variant="outline"
-                  className="border-2 border-awg-blue text-awg-blue hover:bg-awg-blue hover:text-white px-8 py-4 text-lg rounded-xl"
-                >
-                  Посмотреть работы
-                </Button>
               </div>
             </div>
           </div>
@@ -93,8 +89,6 @@ const Hero = () => {
               <div className="text-gray-300">Гарантия результата</div>
             </div>
           </div>
-        </div>
-      </div>
         </div>
       </div>
     </section>
