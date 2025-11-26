@@ -86,7 +86,7 @@ const AskonaProposal = () => {
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-12 text-center text-gray-900">Как мы достигнем результата</h2>
+          <h2 className="text-5xl font-bold mb-16 text-center text-gray-900">Этапы работ</h2>
           
           <div className="space-y-8">
             {[
