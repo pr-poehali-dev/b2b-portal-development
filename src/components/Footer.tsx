@@ -1,150 +1,145 @@
+import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Компания */}
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center space-x-3 mb-6">
-              <span className="text-xl font-bold">AWG</span>
-            </div>
+            <div className="text-2xl font-bold mb-6">AWG</div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              <a href="https://awg.ru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">awg.ru</a> — ИТ-интегратор. 
-              Проектируем, разрабатываем и внедряем комплексные ИТ-решения для ускорения цифровой трансформации бизнеса.
+              ИТ-интегратор. Проектируем, разрабатываем и внедряем комплексные ИТ-решения для ускорения цифровой трансформации бизнеса.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-awg-blue transition-colors">
-                <Icon name="MessageCircle" className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-awg-blue transition-colors">
-                <Icon name="Linkedin" className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-awg-blue transition-colors">
-                <Icon name="Github" className="w-5 h-5" />
-              </a>
-            </div>
+            <a 
+              href="https://awg.ru" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white hover:text-gray-300 transition-colors inline-flex items-center gap-2"
+            >
+              awg.ru
+              <Icon name="ExternalLink" className="w-4 h-4" />
+            </a>
           </div>
 
-          {/* Услуги */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Услуги</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Разработка порталов
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Интеграция систем
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Автоматизация процессов
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Техническая поддержка
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Консультации
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Компания */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Компания</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  О нас
+                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
+                  О компании
+                </Link>
+              </li>
+              <li>
+                <a href="https://awg.ru/services/" className="text-gray-400 hover:text-white transition-colors">
+                  Услуги
                 </a>
               </li>
               <li>
-                <a href="#portfolio" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Портфолио
+                <Link to="/cases" className="text-gray-400 hover:text-white transition-colors">
+                  Проекты
+                </Link>
+              </li>
+              <li>
+                <a href="https://awg.ru/clients/" className="text-gray-400 hover:text-white transition-colors">
+                  Клиенты
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
+                <Link to="/team" className="text-gray-400 hover:text-white transition-colors">
                   Команда
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Карьера
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
-                  Новости
+                <a href="https://awg.ru/news/" className="text-gray-400 hover:text-white transition-colors">
+                  Блог
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Контакты */}
+          <div>
+            <h3 className="text-lg font-semibold mb-6">Услуги</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="https://awg.ru/services/" className="text-gray-400 hover:text-white transition-colors">
+                  ИТ-консалтинг
+                </a>
+              </li>
+              <li>
+                <a href="https://awg.ru/services/" className="text-gray-400 hover:text-white transition-colors">
+                  Разработка ПО
+                </a>
+              </li>
+              <li>
+                <a href="https://awg.ru/services/" className="text-gray-400 hover:text-white transition-colors">
+                  Внедрение систем
+                </a>
+              </li>
+              <li>
+                <a href="https://awg.ru/services/" className="text-gray-400 hover:text-white transition-colors">
+                  Аутстаффинг
+                </a>
+              </li>
+              <li>
+                <a href="https://awg.ru/services/" className="text-gray-400 hover:text-white transition-colors">
+                  Data аналитика
+                </a>
+              </li>
+              <li>
+                <a href="https://awg.ru/experts/" className="text-gray-400 hover:text-white transition-colors">
+                  Стать партнером
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <div>
             <h3 className="text-lg font-semibold mb-6">Контакты</h3>
             <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <Icon name="Phone" className="w-5 h-5 text-awg-blue mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400">+7 (495) 123-45-67</p>
-                  <p className="text-gray-400">+7 (800) 123-45-67</p>
-                </div>
-              </div>
+              <a 
+                href="tel:+74952780708" 
+                className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+              >
+                <Icon name="Phone" className="w-5 h-5 flex-shrink-0" />
+                <span>+7 495 278-07-08</span>
+              </a>
               
-              <div className="flex items-start space-x-3">
-                <Icon name="Mail" className="w-5 h-5 text-awg-blue mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400">info@b2bportals.ru</p>
-                  <p className="text-gray-400">sales@b2bportals.ru</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <Icon name="MapPin" className="w-5 h-5 text-awg-blue mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400">г. Москва, ул. Тверская, 1</p>
-                  <p className="text-gray-400">БЦ "Технопарк", офис 501</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <Icon name="Clock" className="w-5 h-5 text-awg-blue mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-gray-400">Пн-Пт: 9:00 - 18:00</p>
-                  <p className="text-gray-400">Поддержка: 24/7</p>
-                </div>
-              </div>
+              <a 
+                href="https://t.me/awg_connect_bot" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+              >
+                <Icon name="Send" className="w-5 h-5 flex-shrink-0" />
+                <span>Telegram</span>
+              </a>
+
+              <Link 
+                to="/contact" 
+                className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors"
+              >
+                <Icon name="Mail" className="w-5 h-5 flex-shrink-0" />
+                <span>Написать нам</span>
+              </Link>
             </div>
           </div>
         </div>
 
-        {/* Нижняя часть */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="border-t border-gray-800 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm">
-              © 2024 AWG (awg.ru). Все права защищены.
+              © 2024 AWG. Все права защищены.
             </div>
-            <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
+            <div className="flex flex-wrap justify-center gap-6 text-sm">
+              <a href="https://awg.ru/contacts/" className="text-gray-400 hover:text-white transition-colors">
+                Контакты
+              </a>
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Политика конфиденциальности
               </a>
-              <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
+              <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 Условия использования
-              </a>
-              <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
-                Соглашение
               </a>
             </div>
           </div>
