@@ -26,12 +26,20 @@ const Navigation = () => {
               О компании
             </Link>
             <Link 
-              to="/team" 
+              to="/askona-proposal" 
               className={`text-sm hover:text-gray-900 transition-colors ${
-                isActive('/team') ? 'text-gray-900 font-semibold' : 'text-gray-600'
+                isActive('/askona-proposal') ? 'text-gray-900 font-semibold' : 'text-gray-600'
               }`}
             >
-              Команда
+              Askona
+            </Link>
+            <Link 
+              to="/project-team" 
+              className={`text-sm hover:text-gray-900 transition-colors ${
+                isActive('/project-team') ? 'text-gray-900 font-semibold' : 'text-gray-600'
+              }`}
+            >
+              Команда проекта
             </Link>
             <Link 
               to="/cases" 
@@ -40,14 +48,6 @@ const Navigation = () => {
               }`}
             >
               Кейсы
-            </Link>
-            <Link 
-              to="/askona-proposal" 
-              className={`text-sm hover:text-gray-900 transition-colors ${
-                isActive('/askona-proposal') ? 'text-gray-900 font-semibold' : 'text-gray-600'
-              }`}
-            >
-              Askona
             </Link>
             <Link to="/contact">
               <Button size="sm" className="bg-black hover:bg-gray-800">

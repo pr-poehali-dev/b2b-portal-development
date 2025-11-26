@@ -5,20 +5,19 @@ import Icon from '@/components/ui/icon';
 
 const AskonaProposal = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       
-      <section className="pt-32 pb-20 px-6 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-purple-600/10 to-pink-600/10"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto">
-            <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm font-semibold mb-6">
+            <div className="inline-block px-4 py-2 bg-black text-white rounded-full text-sm font-semibold mb-6">
               КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
             </div>
-            <h1 className="text-7xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h1 className="text-7xl font-bold mb-8 text-gray-900">
               Проектирование ИТ-архитектуры для Askona
             </h1>
-            <p className="text-2xl text-gray-300 leading-relaxed">
+            <p className="text-2xl text-gray-700 leading-relaxed">
               Аудит и проектирование ИТ-архитектуры для принятия data driven решений 
               с целью кратного роста и централизованного масштабирования платформы
             </p>
@@ -28,14 +27,14 @@ const AskonaProposal = () => {
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600 to-purple-600 p-12 rounded-3xl shadow-2xl">
+          <div className="bg-gradient-to-br from-blue-600 to-purple-600 text-white p-12 rounded-3xl shadow-xl">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
                 <Icon name="Target" className="w-8 h-8" />
               </div>
               <h2 className="text-3xl font-bold">Цель проекта</h2>
             </div>
-            <p className="text-2xl leading-relaxed text-white/95">
+            <p className="text-2xl leading-relaxed">
               Проектирование ИТ-архитектуры для принятия data driven решений с целью 
               кратного роста и централизованного масштабирования платформы Askona 3.0
             </p>
@@ -43,9 +42,9 @@ const AskonaProposal = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-12 text-center">Что вы получите</h2>
+          <h2 className="text-5xl font-bold mb-12 text-center text-gray-900">Что вы получите</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               {
@@ -73,21 +72,21 @@ const AskonaProposal = () => {
                 gradient: 'from-green-500 to-emerald-500'
               }
             ].map((item, index) => (
-              <div key={index} className="group relative bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 hover:border-white/30 transition-all duration-300 hover:scale-105">
+              <div key={index} className="bg-white p-8 rounded-2xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-xl">
                 <div className={`w-16 h-16 bg-gradient-to-br ${item.gradient} rounded-2xl flex items-center justify-center mb-6 shadow-lg`}>
                   <Icon name={item.icon as any} className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-semibold mb-4">{item.title}</h3>
-                <p className="text-gray-300 leading-relaxed">{item.desc}</p>
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">{item.title}</h3>
+                <p className="text-gray-600 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-white/5 backdrop-blur-sm">
+      <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-16 text-center">Этапы работ</h2>
+          <h2 className="text-5xl font-bold mb-16 text-center text-gray-900">Этапы работ</h2>
           
           <div className="space-y-8">
             {[
@@ -96,6 +95,7 @@ const AskonaProposal = () => {
                 title: 'Проектирование архитектуры',
                 duration: '3 недели',
                 price: '608 484 ₽',
+                gradient: 'from-blue-500 to-cyan-500',
                 blocks: [
                   {
                     title: 'Формализация',
@@ -121,6 +121,7 @@ const AskonaProposal = () => {
                 title: 'Интеграционная архитектура',
                 duration: '3 недели',
                 price: '968 704 ₽',
+                gradient: 'from-purple-500 to-pink-500',
                 blocks: [
                   {
                     title: 'Модели интеграций',
@@ -138,6 +139,7 @@ const AskonaProposal = () => {
                 title: 'Дорожная карта внедрения',
                 duration: '2 недели',
                 price: '287 153 ₽',
+                gradient: 'from-orange-500 to-red-500',
                 blocks: [
                   {
                     title: 'Планирование этапов',
@@ -155,6 +157,7 @@ const AskonaProposal = () => {
                 title: 'Процессы и команда',
                 duration: '5 недель',
                 price: '454 236 ₽',
+                gradient: 'from-green-500 to-emerald-500',
                 blocks: [
                   {
                     title: 'Формализация потребностей',
@@ -168,20 +171,21 @@ const AskonaProposal = () => {
                 result: 'Целевые процессы и проектная команда'
               }
             ].map((stage, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-white/30 transition-all">
+              <div key={index} className="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden hover:shadow-xl transition-all">
                 <div className="p-8">
                   <div className="flex items-start justify-between mb-8">
                     <div className="flex items-center gap-6">
-                      <div className="text-6xl font-bold text-white/20">{stage.number}</div>
+                      <div className={`text-6xl font-bold bg-gradient-to-br ${stage.gradient} bg-clip-text text-transparent`}>
+                        {stage.number}
+                      </div>
                       <div>
-                        <h3 className="text-3xl font-bold mb-2">{stage.title}</h3>
-                        <div className="flex items-center gap-4 text-gray-400">
+                        <h3 className="text-3xl font-bold mb-2 text-gray-900">{stage.title}</h3>
+                        <div className="flex items-center gap-4 text-gray-600">
                           <span className="flex items-center gap-2">
                             <Icon name="Clock" size={16} />
                             {stage.duration}
                           </span>
-                          <span className="flex items-center gap-2">
-                            <Icon name="DollarSign" size={16} />
+                          <span className="flex items-center gap-2 font-semibold text-gray-900">
                             {stage.price}
                           </span>
                         </div>
@@ -191,12 +195,12 @@ const AskonaProposal = () => {
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                     {stage.blocks.map((block, i) => (
-                      <div key={i} className="bg-white/5 rounded-xl p-6">
-                        <h4 className="font-semibold mb-3 text-lg">{block.title}</h4>
+                      <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
+                        <h4 className="font-semibold mb-3 text-lg text-gray-900">{block.title}</h4>
                         <ul className="space-y-2">
                           {block.items.map((item, j) => (
-                            <li key={j} className="text-gray-300 text-sm flex items-start gap-2">
-                              <span className="text-blue-400 mt-1">•</span>
+                            <li key={j} className="text-gray-600 text-sm flex items-start gap-2">
+                              <span className="text-blue-500 mt-1">•</span>
                               <span>{item}</span>
                             </li>
                           ))}
@@ -205,12 +209,12 @@ const AskonaProposal = () => {
                     ))}
                   </div>
                   
-                  <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-xl p-6">
+                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
                     <div className="flex items-center gap-3">
-                      <Icon name="CheckCircle" className="w-6 h-6 text-green-400" />
+                      <Icon name="CheckCircle" className="w-6 h-6 text-green-600" />
                       <div>
-                        <div className="text-sm text-gray-400 mb-1">Результат этапа:</div>
-                        <div className="font-semibold text-lg">{stage.result}</div>
+                        <div className="text-sm text-gray-600 mb-1">Результат этапа:</div>
+                        <div className="font-semibold text-lg text-gray-900">{stage.result}</div>
                       </div>
                     </div>
                   </div>
@@ -221,36 +225,36 @@ const AskonaProposal = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl border border-white/10 p-12">
-            <h2 className="text-4xl font-bold mb-8 text-center">Итоговая стоимость</h2>
+          <div className="bg-white rounded-3xl border-2 border-gray-200 p-12 shadow-xl">
+            <h2 className="text-4xl font-bold mb-8 text-center text-gray-900">Итоговая стоимость</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   5
                 </div>
-                <div className="text-gray-400">недель</div>
+                <div className="text-gray-600">недель</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
                   3.3М ₽
                 </div>
-                <div className="text-gray-400">без НДС</div>
+                <div className="text-gray-600">без НДС</div>
               </div>
               <div className="text-center">
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">
+                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
                   4.0М ₽
                 </div>
-                <div className="text-gray-400">с НДС</div>
+                <div className="text-gray-600">с НДС</div>
               </div>
             </div>
             
-            <div className="border-t border-white/10 pt-8">
+            <div className="border-t border-gray-200 pt-8">
               <table className="w-full">
                 <thead>
-                  <tr className="text-gray-400 text-sm">
+                  <tr className="text-gray-600 text-sm">
                     <th className="text-left pb-4">Этап</th>
                     <th className="text-left pb-4">Срок</th>
                     <th className="text-right pb-4">Без НДС</th>
@@ -264,18 +268,18 @@ const AskonaProposal = () => {
                     { name: 'Дорожная карта внедрения', weeks: '2 нед.', base: '287 153', vat: '344 584' },
                     { name: 'Ретроспектива процессов', weeks: '5 нед.', base: '454 236', vat: '545 083' }
                   ].map((row, i) => (
-                    <tr key={i} className="border-t border-white/5">
-                      <td className="py-4">{row.name}</td>
-                      <td className="py-4 text-gray-400">{row.weeks}</td>
-                      <td className="py-4 text-right">{row.base} ₽</td>
-                      <td className="py-4 text-right">{row.vat} ₽</td>
+                    <tr key={i} className="border-t border-gray-100">
+                      <td className="py-4 text-gray-900">{row.name}</td>
+                      <td className="py-4 text-gray-600">{row.weeks}</td>
+                      <td className="py-4 text-right text-gray-900">{row.base} ₽</td>
+                      <td className="py-4 text-right text-gray-900">{row.vat} ₽</td>
                     </tr>
                   ))}
-                  <tr className="border-t border-white/20 font-bold text-lg">
-                    <td className="py-4">Итого</td>
-                    <td className="py-4 text-gray-400">5 нед.</td>
-                    <td className="py-4 text-right">3 294 142 ₽</td>
-                    <td className="py-4 text-right">3 952 971 ₽</td>
+                  <tr className="border-t-2 border-gray-300 font-bold text-lg">
+                    <td className="py-4 text-gray-900">Итого</td>
+                    <td className="py-4 text-gray-600">5 нед.</td>
+                    <td className="py-4 text-right text-gray-900">3 294 142 ₽</td>
+                    <td className="py-4 text-right text-gray-900">3 952 971 ₽</td>
                   </tr>
                 </tbody>
               </table>
@@ -284,52 +288,31 @@ const AskonaProposal = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-white/5 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center">Команда проекта</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { role: 'Team Lead анализа', name: 'Евгений Скориков', color: 'from-blue-500 to-cyan-500' },
-              { role: 'Руководитель проекта', name: 'Елена Соколова', color: 'from-purple-500 to-pink-500' },
-              { role: 'Системный аналитик', name: 'Диана Абдульманова', color: 'from-orange-500 to-red-500' },
-              { role: 'Аналитик', name: 'Алексей Ровдо', color: 'from-green-500 to-emerald-500' },
-              { role: 'Техлид', name: 'Чикнунов', color: 'from-indigo-500 to-purple-500' }
-            ].map((member, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:border-white/30 transition-all">
-                <div className={`w-12 h-12 bg-gradient-to-br ${member.color} rounded-xl mb-4`}></div>
-                <div className="text-sm text-gray-400 mb-2">{member.role}</div>
-                <div className="font-semibold text-lg">{member.name}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="py-20 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-12 text-center shadow-2xl">
+          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-12 text-center shadow-2xl text-white">
             <h2 className="text-4xl font-bold mb-6">Готовы обсудить проект?</h2>
-            <p className="text-xl text-white/90 mb-8">
+            <p className="text-xl mb-8 text-white/90">
               Свяжитесь с нами для обсуждения деталей и уточнения сроков реализации
             </p>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="text-left">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                <div>
                   <div className="text-sm text-white/70 mb-2">Коммерческий директор</div>
                   <div className="font-semibold text-xl mb-1">Мария Павлова</div>
-                  <div className="flex items-center gap-2 text-white/90">
+                  <div className="flex items-center gap-2">
                     <Icon name="Phone" size={16} />
                     +7 916 303 8740
                   </div>
                 </div>
-                <div className="text-left">
+                <div>
                   <div className="text-sm text-white/70 mb-2">Связь</div>
-                  <div className="flex items-center gap-2 text-white/90 mb-2">
+                  <div className="flex items-center gap-2 mb-2">
                     <Icon name="Mail" size={16} />
                     pavlova@awg.ru
                   </div>
-                  <div className="flex items-center gap-2 text-white/90">
+                  <div className="flex items-center gap-2">
                     <Icon name="MessageCircle" size={16} />
                     @MariaPav
                   </div>
