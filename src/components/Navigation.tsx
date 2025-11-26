@@ -13,7 +13,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="text-2xl font-bold">
-            next level IT
+            AWG
           </Link>
           
           <div className="hidden md:flex items-center gap-8">

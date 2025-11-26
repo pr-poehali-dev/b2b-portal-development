@@ -8,16 +8,11 @@ const Footer = () => {
           {/* Компания */}
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src="/api/placeholder/40/40" 
-                alt="Логотип компании" 
-                className="w-10 h-10 object-contain"
-              />
-              <span className="text-xl font-bold">B2B Порталы</span>
+              <span className="text-xl font-bold">AWG</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Разрабатываем корпоративные B2B порталы и системы автоматизации 
-              для повышения эффективности бизнес-процессов.
+              <a href="https://awg.ru" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">awg.ru</a> — ИТ-интегратор. 
+              Проектируем, разрабатываем и внедряем комплексные ИТ-решения для ускорения цифровой трансформации бизнеса.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-awg-blue transition-colors">
@@ -139,7 +134,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © 2024 B2B Порталы. Все права защищены.
+              © 2024 AWG (awg.ru). Все права защищены.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-gray-400 hover:text-awg-blue transition-colors">
