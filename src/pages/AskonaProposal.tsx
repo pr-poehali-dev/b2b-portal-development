@@ -15,11 +15,11 @@ const AskonaProposal = () => {
               КОММЕРЧЕСКОЕ ПРЕДЛОЖЕНИЕ
             </div>
             <h1 className="text-7xl font-bold mb-8 text-gray-900">
-              Проектирование ИТ-архитектуры для Askona
+              КП для компании Askona
             </h1>
             <p className="text-2xl text-gray-700 leading-relaxed">
-              Аудит и проектирование ИТ-архитектуры для принятия data driven решений 
-              с целью кратного роста и централизованного масштабирования платформы
+              Аудит и проектирование ИТ-архитектуры для централизованного 
+              масштабирования платформы Askona 3.0
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ const AskonaProposal = () => {
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-16 text-center text-gray-900">Этапы работ</h2>
+          <h2 className="text-5xl font-bold mb-12 text-center text-gray-900">Как мы достигнем результата</h2>
           
           <div className="space-y-8">
             {[
@@ -185,22 +185,20 @@ const AskonaProposal = () => {
                             <Icon name="Clock" size={16} />
                             {stage.duration}
                           </span>
-                          <span className="flex items-center gap-2 font-semibold text-gray-900">
-                            {stage.price}
-                          </span>
+                          <span className="text-2xl font-bold text-gray-900">{stage.price}</span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                    {stage.blocks.map((block, i) => (
-                      <div key={i} className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                        <h4 className="font-semibold mb-3 text-lg text-gray-900">{block.title}</h4>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                    {stage.blocks.map((block, blockIndex) => (
+                      <div key={blockIndex} className="bg-gray-50 p-4 rounded-xl">
+                        <h4 className="font-semibold mb-3 text-gray-900">{block.title}</h4>
                         <ul className="space-y-2">
-                          {block.items.map((item, j) => (
-                            <li key={j} className="text-gray-600 text-sm flex items-start gap-2">
-                              <span className="text-blue-500 mt-1">•</span>
+                          {block.items.map((item, itemIndex) => (
+                            <li key={itemIndex} className="text-sm text-gray-600 flex items-start gap-2">
+                              <Icon name="Check" size={14} className={`mt-0.5 flex-shrink-0 bg-gradient-to-br ${stage.gradient} bg-clip-text text-transparent`} />
                               <span>{item}</span>
                             </li>
                           ))}
@@ -208,15 +206,10 @@ const AskonaProposal = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  <div className="bg-green-50 border-2 border-green-200 rounded-xl p-6">
-                    <div className="flex items-center gap-3">
-                      <Icon name="CheckCircle" className="w-6 h-6 text-green-600" />
-                      <div>
-                        <div className="text-sm text-gray-600 mb-1">Результат этапа:</div>
-                        <div className="font-semibold text-lg text-gray-900">{stage.result}</div>
-                      </div>
-                    </div>
+
+                  <div className={`bg-gradient-to-br ${stage.gradient} text-white p-4 rounded-xl flex items-center gap-3`}>
+                    <Icon name="CheckCircle2" size={24} />
+                    <span className="font-semibold">Результат: {stage.result}</span>
                   </div>
                 </div>
               </div>
@@ -225,103 +218,21 @@ const AskonaProposal = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="bg-white rounded-3xl border-2 border-gray-200 p-12 shadow-xl">
-            <h2 className="text-4xl font-bold mb-8 text-center text-gray-900">Итоговая стоимость</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  5
-                </div>
-                <div className="text-gray-600">недель</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
-                  3.3М ₽
-                </div>
-                <div className="text-gray-600">без НДС</div>
-              </div>
-              <div className="text-center">
-                <div className="text-5xl font-bold mb-2 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                  4.0М ₽
-                </div>
-                <div className="text-gray-600">с НДС</div>
-              </div>
-            </div>
-            
-            <div className="border-t border-gray-200 pt-8">
-              <table className="w-full">
-                <thead>
-                  <tr className="text-gray-600 text-sm">
-                    <th className="text-left pb-4">Этап</th>
-                    <th className="text-left pb-4">Срок</th>
-                    <th className="text-right pb-4">Без НДС</th>
-                    <th className="text-right pb-4">С НДС</th>
-                  </tr>
-                </thead>
-                <tbody className="text-sm">
-                  {[
-                    { name: 'Проектирование архитектуры', weeks: '3 нед.', base: '608 484', vat: '730 181' },
-                    { name: 'Технологические ориентиры', weeks: '3 нед.', base: '968 704', vat: '1 162 445' },
-                    { name: 'Дорожная карта внедрения', weeks: '2 нед.', base: '287 153', vat: '344 584' },
-                    { name: 'Ретроспектива процессов', weeks: '5 нед.', base: '454 236', vat: '545 083' }
-                  ].map((row, i) => (
-                    <tr key={i} className="border-t border-gray-100">
-                      <td className="py-4 text-gray-900">{row.name}</td>
-                      <td className="py-4 text-gray-600">{row.weeks}</td>
-                      <td className="py-4 text-right text-gray-900">{row.base} ₽</td>
-                      <td className="py-4 text-right text-gray-900">{row.vat} ₽</td>
-                    </tr>
-                  ))}
-                  <tr className="border-t-2 border-gray-300 font-bold text-lg">
-                    <td className="py-4 text-gray-900">Итого</td>
-                    <td className="py-4 text-gray-600">5 нед.</td>
-                    <td className="py-4 text-right text-gray-900">3 294 142 ₽</td>
-                    <td className="py-4 text-right text-gray-900">3 952 971 ₽</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+      <section className="py-20 px-6 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-5xl font-bold mb-8">Итоговая стоимость проекта</h2>
+          <div className="text-7xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+            2 318 577 ₽
           </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-12 text-center shadow-2xl text-white">
-            <h2 className="text-4xl font-bold mb-6">Готовы обсудить проект?</h2>
-            <p className="text-xl mb-8 text-white/90">
-              Свяжитесь с нами для обсуждения деталей и уточнения сроков реализации
-            </p>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                <div>
-                  <div className="text-sm text-white/70 mb-2">Коммерческий директор</div>
-                  <div className="font-semibold text-xl mb-1">Мария Павлова</div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="Phone" size={16} />
-                    +7 916 303 8740
-                  </div>
-                </div>
-                <div>
-                  <div className="text-sm text-white/70 mb-2">Связь</div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Icon name="Mail" size={16} />
-                    pavlova@awg.ru
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Icon name="MessageCircle" size={16} />
-                    @MariaPav
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100 px-12 py-6 text-lg font-semibold shadow-xl">
-              Связаться с нами
+          <p className="text-xl text-gray-300 mb-12">
+            Полный цикл проектирования ИТ-архитектуры Askona 3.0 за 13 недель
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-white text-black hover:bg-gray-100 px-8 py-6 text-lg">
+              Принять предложение
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg">
+              Задать вопрос
             </Button>
           </div>
         </div>
